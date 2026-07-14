@@ -1,0 +1,7 @@
+Daniel,150
+Abel,200
+Sara,100
+Daniel,50
+Abel,75
+John,300
+Sara,150
