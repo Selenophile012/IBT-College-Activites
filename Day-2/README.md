@@ -1,0 +1,1 @@
+This is class work for day 2. it's a simple python program that takes a restaurant bill total ,adds a 10% tip and splits the final amount evently between a list of friends.
