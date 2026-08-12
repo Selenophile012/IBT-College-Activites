@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Flexbox Cards</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 200px;
+
+            padding: 24px;
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+
+            background: #F7FAFC;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Services</h1>
+
+    <section class="cards">
+
+        <article class="card">
+            <h2>Delivery</h2>
+            <p>Fast delivery throughout Addis Ababa.</p>
+        </article>
+
+        <article class="card">
+            <h2>Shopping</h2>
+            <p>Shop for quality Ethiopian products.</p>
+        </article>
+
+        <article class="card">
+            <h2>Support</h2>
+            <p>Our team is ready to help you.</p>
+        </article>
+
+        <article class="card">
+            <h2>Payment</h2>
+            <p>Easy and secure payment options.</p>
+        </article>
+
+    </section>
+
+</body>
+
+</html>

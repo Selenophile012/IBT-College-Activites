@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CSS Grid Page Layout</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .layout {
+            display: grid;
+
+            grid-template-columns: 220px 1fr;
+
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+
+            padding: 20px;
+
+            background: #1B4D8E;
+            color: white;
+        }
+
+        aside {
+            grid-area: sidebar;
+
+            padding: 20px;
+
+            background: #F1F5F9;
+        }
+
+        main {
+            grid-area: main;
+
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+
+            padding: 20px;
+
+            background: #1E293B;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+
+            .layout {
+                grid-template-columns: 1fr;
+
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "main"
+                    "footer";
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <header>
+            <h1>Habesha Dashboard</h1>
+        </header>
+
+        <aside>
+
+            <h2>Menu</h2>
+
+            <ul>
+                <li>Dashboard</li>
+                <li>Orders</li>
+                <li>Customers</li>
+                <li>Settings</li>
+            </ul>
+
+        </aside>
+
+        <main>
+
+            <h2>Dashboard</h2>
+
+            <p>
+                Welcome to your dashboard.
+            </p>
+
+        </main>
+
+        <footer>
+            <p>Bole, Addis Ababa</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

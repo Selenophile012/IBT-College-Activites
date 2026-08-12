@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Absolute Positioning Badge</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            background: #F7FAFC;
+        }
+
+        .product-card {
+            position: relative;
+
+            width: 300px;
+
+            padding: 24px;
+
+            background: white;
+
+            border: 1px solid #ddd;
+
+            border-radius: 10px;
+        }
+
+        .badge {
+            position: absolute;
+
+            top: 8px;
+            right: 8px;
+
+            width: 70px;
+            height: 70px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #D4A027;
+            color: white;
+
+            font-weight: bold;
+
+            text-align: center;
+        }
+
+        .product-card h2 {
+            margin-top: 0;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <article class="product-card">
+
+        <span class="badge">
+            ETB Sale
+        </span>
+
+        <h2>Ethiopian Coffee</h2>
+
+        <p>
+            Premium roasted Ethiopian coffee beans.
+        </p>
+
+        <p class="price">
+            650 ETB
+        </p>
+
+    </article>
+
+</body>
+
+</html>

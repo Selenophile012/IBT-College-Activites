@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>CBE Mobile Banking</title>
+
+    <meta
+        name="description"
+        content="CBE Mobile Banking interface recreation built with HTML and CSS for CodeOps Module 2 Day 14."
+    >
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+
+        <header class="header">
+
+            <div class="header-left">
+
+                <button
+                    class="menu-button"
+                    type="button"
+                    aria-label="Open menu"
+                >
+                    ☰
+                </button>
+
+                <span class="header-title">
+                    CBE
+                </span>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    type="button"
+                    aria-label="Change language"
+                >
+                    አማ
+                </button>
+
+                <button
+                    type="button"
+                    aria-label="Notifications"
+                >
+                    ◔
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                CBE
+            </div>
+
+            <nav class="side-nav">
+
+                <a href="#" class="active">
+                    Home
+                </a>
+
+                <a href="#">
+                    Transfer
+                </a>
+
+                <a href="#">
+                    Banking
+                </a>
+
+                <a href="#">
+                    Utility
+                </a>
+
+                <a href="#">
+                    Travel
+                </a>
+
+                <a href="#">
+                    Settings
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =========================
+             MAIN
+        ========================== -->
+
+        <main class="main">
+
+
+            <!-- Account Card -->
+
+            <section class="account-card">
+
+                <div class="account-top">
+
+                    <div class="bank-name">
+
+                        <div class="bank-logo">
+                            CBE
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Commercial Bank of Ethiopia
+                            </strong>
+
+                            <span>
+                                The Bank You can always Rely on!
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="balance-area">
+
+                    <span class="balance-label">
+                        Balance
+                    </span>
+
+                    <div class="balance">
+
+                        ****** Br.
+
+                        <button
+                            type="button"
+                            aria-label="Show balance"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+                    <span class="account-number">
+                        Saving - 1000******1557
+                    </span>
+
+                    <span class="balance-date">
+                        Jan 3, 2025 16:22:51
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- Services -->
+
+            <section class="services">
+
+                <div class="section-title">
+
+                    <span class="status-dot"></span>
+
+                    <h1>
+                        Services
+                    </h1>
+
+                </div>
+
+
+                <div class="service-grid">
+
+
+                    <a href="#" class="service-card">
+
+                        <span class="service-icon">
+                            ▣
+                        </span>
+
+                        <span>
+                            Top Up
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="service-card">
+
+                        <span class="service-icon">
+                            ⇄
+                        </span>
+
+                        <span>
+                            Transfer
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="service-card">
+
+                        <span class="service-icon">
+                            ♜
+                        </span>
+
+                        <span>
+                            Banking
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="service-card">
+
+                        <span class="service-icon">
+                            ♧
+                        </span>
+
+                        <span>
+                            Utility
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="service-card">
+
+                        <span class="service-icon">
+                            ⚙
+                        </span>
+
+                        <span>
+                            Government Services
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="service-card">
+
+                        <span class="service-icon">
+                            ✈
+                        </span>
+
+                        <span>
+                            Travel
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="service-card">
+
+                        <span class="service-icon">
+                            ◈
+                        </span>
+
+                        <span>
+                            Payment
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="service-card">
+
+                        <span class="service-icon">
+                            ▷
+                        </span>
+
+                        <span>
+                            Entertainment
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- Floating QR Button -->
+
+            <button
+                class="qr-button"
+                type="button"
+                aria-label="QR Code"
+            >
+                ▦
+            </button>
+
+
+        </main>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer class="footer">
+
+            <nav class="bottom-nav">
+
+                <a href="#" class="bottom-item active">
+
+                    <span>
+                        ▦
+                    </span>
+
+                    <small>
+                        Home
+                    </small>
+
+                </a>
+
+
+                <a href="#" class="bottom-item">
+
+                    <span>
+                        ◉
+                    </span>
+
+                    <small>
+                        Pay
+                    </small>
+
+                </a>
+
+
+                <a href="#" class="bottom-item">
+
+                    <span>
+                        ♜
+                    </span>
+
+                    <small>
+                        Banking
+                    </small>
+
+                </a>
+
+
+                <a href="#" class="bottom-item">
+
+                    <span>
+                        ◔
+                    </span>
+
+                    <small>
+                        History
+                    </small>
+
+                </a>
+
+            </nav>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
