@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ethio Telecom Registration</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ethio Telecom Service Registration</h1>
+    </header>
+
+    <main>
+
+        <!-- POST is used because this form sends personal registration information. -->
+
+        <form action="/apply" method="post">
+
+            <p>
+                <label for="name">Full Name</label>
+                <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="email">Email</label>
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="phone">Phone</label>
+                <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    pattern="\+251[0-9]{9}"
+                    aria-describedby="phone-help"
+                    required
+                >
+            </p>
+
+            <p id="phone-help">
+                Format: +251 followed by 9 digits.
+            </p>
+
+            <p>
+                <label for="branch">Branch</label>
+
+                <select id="branch" name="branch" required>
+
+                    <option value="">Choose a branch</option>
+                    <option value="bole">Bole</option>
+                    <option value="kazanchis">Kazanchis</option>
+                    <option value="piassa">Piassa</option>
+
+                </select>
+            </p>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

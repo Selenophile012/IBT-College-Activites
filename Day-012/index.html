@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Reservations — Habesha Eatery, Bole</title>
+
+    <meta name="description"
+        content="Reserve a table at Habesha Eatery in Bole, Addis Ababa.">
+</head>
+
+<body>
+
+    <header>
+        <h1>Habesha Eatery</h1>
+
+        <p>Authentic Ethiopian Dining in Bole, Addis Ababa</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="reservation">
+            <h2>Make a Reservation</h2>
+
+            <form action="/reservation" method="post">
+
+                <fieldset>
+                    <legend>Reservation Details</legend>
+
+                    <p>
+                        <label for="fullname">Full Name</label>
+                        <input
+                            id="fullname"
+                            name="fullname"
+                            type="text"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">Email</label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone</label>
+                        <input
+                            id="phone"
+                            name="phone"
+                            type="tel"
+                            pattern="\+251[0-9]{9}"
+                            aria-describedby="phone-help"
+                            required
+                        >
+                    </p>
+
+                    <p id="phone-help">
+                        Format: +251********
+                    </p>
+
+                    <p>
+                        <label for="date">Reservation Date</label>
+                        <input
+                            id="date"
+                            name="date"
+                            type="date"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="size">Party Size</label>
+                        <input
+                            id="size"
+                            name="size"
+                            type="number"
+                            min="1"
+                            max="12"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="branch">Branch</label>
+                        <select id="branch" name="branch" required>
+                            <option value="">Select a branch</option>
+                            <option value="bole">Bole</option>
+                            <option value="kazanchis">Kazanchis</option>
+                            <option value="piassa">Piassa</option>
+                        </select>
+                    </p>
+
+                    <button type="submit">Reserve Table</button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+
+        <section id="menu">
+
+            <h2>Our Menu</h2>
+
+            <table>
+
+                <caption>Habesha Eatery — Main Menu</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Dish</th>
+                        <th scope="col">Price (ETB)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th scope="row">Doro Wat</th>
+                        <td>320</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Shiro</th>
+                        <td>180</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Tibs</th>
+                        <td>360</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Kitfo</th>
+                        <td>450</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Vegetable Beyaynetu</th>
+                        <td>250</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <section id="media">
+
+            <h2>Experience Ethiopian Food</h2>
+
+            <figure>
+
+                <img
+                    src="doro.jpg"
+                    alt="A plate of doro wat served on injera"
+                    width="640"
+                    height="420"
+                    loading="lazy"
+                >
+
+                <figcaption>
+                    Traditional Ethiopian doro wat served with injera.
+                </figcaption>
+
+            </figure>
+
+            <h3>Find Us</h3>
+
+            <iframe
+                src="https://www.google.com/maps?q=Bole,Addis+Ababa&output=embed"
+                title="Map showing Habesha Eatery in Bole, Addis Ababa"
+                width="100%"
+                height="320"
+                loading="lazy">
+            </iframe>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Bole, Addis Ababa</p>
+        <p>Phone: +251 979078890</p>
+    </footer>
+
+</body>
+
+</html>
