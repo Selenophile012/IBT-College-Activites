@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CSS Box Model</title>
+
+    <style>
+
+        .content-box {
+            width: 300px;
+            padding: 24px;
+            border: 2px solid #1B4D8E;
+            box-sizing: content-box;
+            margin-bottom: 30px;
+        }
+
+        .border-box {
+            width: 300px;
+            padding: 24px;
+            border: 2px solid #D4A027;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Box Model</h1>
+
+    <h2>Content-box</h2>
+
+    <div class="content-box">
+        This box is 300px wide for the content only.
+        Padding and border are added outside the 300px.
+    </div>
+
+    <h2>Border-box</h2>
+
+    <div class="border-box">
+        This box is exactly 300px wide including padding and border.
+    </div>
+
+</body>
+
+</html>
