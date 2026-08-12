@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CSS Specificity</title>
+
+    <style>
+
+        p {
+            color: black;
+        }
+
+        .note {
+            color: blue;
+        }
+
+        #lead {
+            color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Specificity</h1>
+
+    <p id="lead" class="note">
+        This paragraph is green because the ID selector has higher specificity.
+    </p>
+
+    <h2>Specificity Scores</h2>
+
+    <ul>
+        <li>Element: 0,0,0,1</li>
+        <li>Class: 0,0,1,0</li>
+        <li>ID: 0,1,0,0</li>
+    </ul>
+
+    <p>
+        The ID selector wins because it has the highest specificity score.
+    </p>
+
+</body>
+
+</html>
