@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+main {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#facts {
+    margin-top: 20px;
+}
+
+.fact {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.fact strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.flag {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.loading {
+    text-align: center;
+}
+
+.error {
+    text-align: center;
+    padding: 20px;
+}
