@@ -1,0 +1,64 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Addis Eats</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="brand">
+                <h1>Addis Eats</h1>
+                <p>Delicious Ethiopian food in Addis Ababa</p>
+            </div>
+
+            <label for="search" class="search-label">
+                Search dishes
+            </label>
+
+            <input
+                id="search"
+                type="search"
+                placeholder="Search dishes..."
+                autocomplete="off"
+            >
+        </div>
+    </header>
+
+    <main>
+
+        <section id="menu" aria-label="Menu">
+            <p>Loading menu...</p>
+        </section>
+
+        <aside id="cart" aria-label="Your order">
+
+            <h2>Your Order</h2>
+
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="total">0 ETB</strong>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Bole, Addis Ababa · TeleBirr</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
