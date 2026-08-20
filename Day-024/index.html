@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Addis Eats</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <div class="brand">
+                <h1>Addis Eats</h1>
+                <p>Delicious Ethiopian food in Addis Ababa</p>
+            </div>
+
+            <div class="search-box">
+                <label for="search">Search dishes</label>
+
+                <input
+                    id="search"
+                    type="search"
+                    placeholder="Search dishes..."
+                    autocomplete="off"
+                >
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section id="menu" aria-label="Menu">
+            <p>Loading menu...</p>
+        </section>
+
+
+        <aside id="cart" aria-label="Your order">
+
+            <h2>Your Order</h2>
+
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="total">0 ETB</strong>
+            </div>
+
+        </aside>
+
+
+        <section class="checkout-section" aria-labelledby="checkout-heading">
+
+            <h2 id="checkout-heading">Checkout</h2>
+
+            <form id="checkout" novalidate>
+
+                <label for="name">
+                    Name
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        autocomplete="name"
+                        required
+                    >
+                </label>
+
+
+                <label for="phone">
+                    Phone (TeleBirr)
+                    <input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        placeholder="09xxxxxxxx"
+                        autocomplete="tel"
+                        required
+                    >
+                </label>
+
+
+                <label for="area">
+                    Delivery area
+
+                    <select id="area" name="area">
+
+                        <option value="Bole">
+                            Bole
+                        </option>
+
+                        <option value="Kazanchis">
+                            Kazanchis
+                        </option>
+
+                        <option value="Megenagna">
+                            Megenagna
+                        </option>
+
+                    </select>
+                </label>
+
+
+                <p
+                    id="form-error"
+                    class="error"
+                    aria-live="polite"
+                ></p>
+
+
+                <button
+                    id="place-order"
+                    type="submit"
+                >
+                    Place Order
+                </button>
+
+            </form>
+
+
+            <div
+                id="confirmation"
+                class="confirmation"
+                aria-live="polite"
+                hidden
+            ></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Bole, Addis Ababa · TeleBirr</p>
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
