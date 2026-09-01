@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Doro Wot",
+    "price": 350,
+    "category": "Traditional",
+    "spicy": true
+  },
+  {
+    "id": 2,
+    "name": "Kitfo",
+    "price": 400,
+    "category": "Traditional",
+    "spicy": true
+  },
+  {
+    "id": 3,
+    "name": "Tibs",
+    "price": 380,
+    "category": "Grill",
+    "spicy": true
+  },
+  {
+    "id": 4,
+    "name": "Shiro Wot",
+    "price": 250,
+    "category": "Vegan",
+    "spicy": true
+  },
+  {
+    "id": 5,
+    "name": "Vegetable Pasta",
+    "price": 280,
+    "category": "Vegan",
+    "spicy": false
+  },
+  {
+    "id": 6,
+    "name": "Chicken Pasta",
+    "price": 320,
+    "category": "Pasta",
+    "spicy": false
+  },
+  {
+    "id": 7,
+    "name": "Beef Pasta",
+    "price": 350,
+    "category": "Pasta",
+    "spicy": false
+  },
+  {
+    "id": 8,
+    "name": "Chechebsa",
+    "price": 220,
+    "category": "Breakfast",
+    "spicy": false
+  }
+]
