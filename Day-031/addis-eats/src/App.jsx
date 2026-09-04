@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   BrowserRouter,
   Routes,
@@ -13,8 +14,38 @@ import Checkout from "./Checkout";
 import Login from "./Login";
 import NotFound from "./NotFound";
 import RequireAuth from "./auth/RequireAuth";
+import dishes from "./data";
 
 function App() {
+  const [cart, setCart] = useState([]);
+
+  function addToCart(dish) {
+    setCart((currentCart) => {
+      const existing = currentCart.find(
+        (item) => item.id === dish.id
+      );
+
+      if (existing) {
+        return currentCart.map((item) =>
+          item.id === dish.id
+            ? {
+                ...item,
+                quantity: item.quantity + 1
+              }
+            : item
+        );
+      }
+
+      return [
+        ...currentCart,
+        {
+          ...dish,
+          quantity: 1
+        }
+      ];
+    });
+  }
+
   return (
     <BrowserRouter>
       <Routes>
@@ -22,11 +53,25 @@ function App() {
 
           <Route index element={<Home />} />
 
-          <Route path="menu" element={<Menu />} />
+          <Route
+            path="menu"
+            element={
+              <Menu
+                dishes={dishes}
+                onAdd={addToCart}
+              />
+            }
+          />
 
-          <Route path="menu/:id" element={<DishDetail />} />
+          <Route
+            path="menu/:id"
+            element={<DishDetail />}
+          />
 
-          <Route path="cart" element={<Cart />} />
+          <Route
+            path="cart"
+            element={<Cart cart={cart} />}
+          />
 
           <Route
             path="checkout"
@@ -37,9 +82,15 @@ function App() {
             }
           />
 
-          <Route path="login" element={<Login />} />
+          <Route
+            path="login"
+            element={<Login />}
+          />
 
-          <Route path="*" element={<NotFound />} />
+          <Route
+            path="*"
+            element={<NotFound />}
+          />
 
         </Route>
       </Routes>

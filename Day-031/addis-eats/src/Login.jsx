@@ -5,7 +5,7 @@ import {
 
 import { useState } from "react";
 
-import { useAuth } from "../auth/AuthContext";
+import { useAuth } from "./auth/AuthContext";
 
 function Login() {
   const [phone, setPhone] = useState("");
