@@ -1,0 +1,77 @@
+.checkout-page {
+  padding: 40px 20px;
+}
+
+.checkout-container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.checkout-container h1 {
+  margin-bottom: 10px;
+}
+
+.checkout-total {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.field input[aria-invalid="true"],
+.field select[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
+  border: 2px solid #d32f2f;
+}
+
+.field-error {
+  margin-top: 7px;
+  color: #d32f2f;
+  font-size: 14px;
+}
+
+.server-error {
+  margin-bottom: 20px;
+  color: #d32f2f;
+}
+
+.success-message {
+  margin-bottom: 20px;
+}
+
+.checkout-container button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.checkout-container button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
