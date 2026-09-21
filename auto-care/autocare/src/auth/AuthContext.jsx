@@ -9,8 +9,9 @@ export function AuthProvider({ children }) {
     return savedUser ? JSON.parse(savedUser) : null;
   });
 
-  function login(email) {
+  function login(name, email) {
     const newUser = {
+      name,
       email,
     };
 

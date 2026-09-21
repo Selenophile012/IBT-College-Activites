@@ -1,9 +1,14 @@
-import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
+import {
+  Link,
+  NavLink,
+  Outlet,
+  useNavigate,
+} from "react-router-dom";
 
 import { useAuth } from "./auth/AuthContext";
 
 function Layout() {
-  const { user, isAuthenticated, logout } = useAuth();
+  const { isAuthenticated, logout } = useAuth();
   const navigate = useNavigate();
 
   function handleLogout() {
@@ -35,19 +40,13 @@ function Layout() {
             </NavLink>
 
             {isAuthenticated ? (
-              <>
-                <span className="user-email">
-                  {user.email}
-                </span>
-
-                <button
-                  type="button"
-                  className="logout-button"
-                  onClick={handleLogout}
-                >
-                  Sign Out
-                </button>
-              </>
+              <button
+                type="button"
+                className="logout-button"
+                onClick={handleLogout}
+              >
+                Sign Out
+              </button>
             ) : (
               <NavLink to="/login">
                 Sign In
@@ -64,7 +63,7 @@ function Layout() {
       <footer className="footer">
         <div className="container">
           <p>
-            © 2026 AutoCare. Vehicle maintenance .
+            © 2026 AutoCare. Vehicle maintenance.
           </p>
         </div>
       </footer>

@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { useAuth } from "./AuthContext";
 
 function Login() {
   const navigate = useNavigate();
-  const location = useLocation();
 
   const { login } = useAuth();
 
   const [form, setForm] = useState({
+    name: "",
     email: "",
     password: "",
   });
@@ -28,17 +28,16 @@ function Login() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (!form.email || !form.password) {
-      setError("Please enter your email and password.");
+    if (!form.name || !form.email || !form.password) {
+      setError(
+        "Please enter your name, email, and password."
+      );
       return;
     }
 
-    login(form.email);
+    login(form.name, form.email);
 
-    const returnTo =
-      location.state?.from || "/appointments";
-
-    navigate(returnTo, {
+    navigate("/", {
       replace: true,
     });
   }
@@ -65,6 +64,18 @@ function Login() {
               {error}
             </div>
           )}
+
+          <label>
+            Name
+
+            <input
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              placeholder="Enter your name"
+            />
+          </label>
 
           <label>
             Email
